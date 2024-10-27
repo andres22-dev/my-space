@@ -2,11 +2,13 @@ import logo from './logo.svg';
 import './styles/styles.css';
 import React from 'react';
 import Navbar from './components/Navbar';
+import Home from './components/Home';
 
 const App = () => {
   return (
     <div className="App">
       <Navbar></Navbar>
+      <Home></Home>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
