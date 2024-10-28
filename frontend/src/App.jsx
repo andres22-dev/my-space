@@ -1,16 +1,20 @@
-import logo from './logo.svg';
-import './styles/styles.css';
 import React from 'react';
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 import About from './components/About';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
+import ContactForm from './components/ContactForm';
+
+import logo from './logo.svg';
 
 const App = () => {
   return (
     <div className="App">
-      <Navbar></Navbar>
+      <Header/>
       <About></About>
       <Skills></Skills>
+      <Projects/>
+      <ContactForm/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

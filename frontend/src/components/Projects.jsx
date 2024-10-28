@@ -34,4 +34,4 @@ const Projects = () => {
     
 }
   
-export {ProjectCard,  Projects}
+export default Projects
