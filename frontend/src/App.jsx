@@ -2,13 +2,15 @@ import logo from './logo.svg';
 import './styles/styles.css';
 import React from 'react';
 import Navbar from './components/Navbar';
-import Home from './components/Home';
+import About from './components/About';
+import Skills from './components/Skills';
 
 const App = () => {
   return (
     <div className="App">
       <Navbar></Navbar>
-      <Home></Home>
+      <About></About>
+      <Skills></Skills>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

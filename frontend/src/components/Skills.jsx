@@ -1,6 +1,6 @@
 import React from 'react';
 
-const skills = ['JavaScript', 'React', 'CSS', 'Node.js'];
+const skills = ['JavaScript', 'HTML', 'CSS', 'React', 'VueJS','Node.js','Php','Python', 'SQL'];
 
 const Skills = () => {
 
