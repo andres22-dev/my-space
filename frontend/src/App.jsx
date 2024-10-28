@@ -4,6 +4,8 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import ContactForm from './components/ContactForm';
+import LastPublication from './components/LastPublication';
+
 
 import logo from './logo.svg';
 
@@ -11,10 +13,11 @@ const App = () => {
   return (
     <div className="App">
       <Header/>
-      <About></About>
-      <Skills></Skills>
+      <About />
+      <Skills />
       <Projects/>
       <ContactForm/>
+      <LastPublication/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
