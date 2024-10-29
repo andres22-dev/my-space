@@ -1,11 +1,15 @@
-#entry point for the backend  
-from flask import Flask
-from app.routes import api_bp 
+from flask import Flask, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  # Para permitir solicitudes desde React
-app.register_blueprint(api_bp)
+CORS(app)  # Permite solicitudes de dominios cruzados, necesarias para conectar con React
+@app.route('/api/data', methods=['GET'])
+def get_data():
+    data = {
+        "message": "Hello from Flask!",
+        "info": "This is data from the Flask backend."
+    }
+    return jsonify(data)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(port=5000)
