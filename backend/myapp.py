@@ -7,14 +7,18 @@ app = Flask(__name__)
 #Establishin connection to the PostgresSQL database
 CORS(app)
 
+# Conection with databse 
 conection = psycopg2.connect(
     host="localhost",
     database="andresweb", 
     user="postgres",
     password="felipe0021"
 )
+#test connection 
 
-
+# decorador para que nuestra aplicacion acceda a la ruta 
+    # cada ruta es una funcion view 
+        #se ejecutara cuando el usuario acceda a la url     
 @app.route('/base')
 def test_db():
     test = conection.cursor()
